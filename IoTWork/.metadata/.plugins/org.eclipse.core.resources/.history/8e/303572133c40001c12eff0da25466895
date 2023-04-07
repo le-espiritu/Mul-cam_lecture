@@ -1,0 +1,30 @@
+package thread.basic;
+
+class Super{
+	
+}
+//이미 상속하고 있는 클래스가 있는 경우 Thread프로그래밍을 하기 위해서 Runnable인터페이스를 상속한다.
+class RunnableDemo01 extends Super implements Runnable {
+	@Override
+	public void run() {
+		//1부터 20까지 출력하는 코드
+		for (int i = 1; i <=20; i++) {
+			System.out.print(i+"("+Thread.currentThread().getName()+")");
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			if(i%5==0) {
+				System.out.println();
+			}
+		}
+	}
+}
+public class RunnableTest01 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

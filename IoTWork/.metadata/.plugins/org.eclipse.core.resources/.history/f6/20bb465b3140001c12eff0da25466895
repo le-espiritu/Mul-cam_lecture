@@ -1,0 +1,16 @@
+package thread.basic;
+
+class ThreadDemo01 extends Thread{
+
+	@Override
+	public void run() {
+	
+	}
+	
+}
+public class ThreadTest01 {
+	public static void main(String[] args) {
+
+	}
+
+}
