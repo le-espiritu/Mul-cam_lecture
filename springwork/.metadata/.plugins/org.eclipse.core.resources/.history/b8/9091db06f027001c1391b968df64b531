@@ -1,0 +1,19 @@
+package multi.erp.emp;
+
+import java.util.ArrayList;
+
+public class EmpServiceImpl implements EmpService {
+
+	@Override
+	public int insert(EmpVO user) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public ArrayList<EmpVO> getMemberList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//오늘날짜를 2021.09.08. _요일의 형태로 출력
+			//단, 요일은 배열을 이용해서 처리
+			today = new Date();
+			weekday = ["일요일","월요일","화요일","수요일","목요일","금요일","토요일"];
+			day = today.getDay();
+			document.write(today.toLocaleDateString()+" "+weekday[day])
+			
+			dday = new Date();
+			dday.setMonth(8);
+			dday.setDate(13);
+			document.write("<br/>"+dday.toLocaleDateString())
+		</script>
+	</body>
+</html>

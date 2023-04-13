@@ -1,0 +1,8 @@
+@charset "UTF-8";
+body{
+	/* 모든 페이지에 공통으로 적용할 속성을 정의  */
+	background-color: orange;
+}
+img{
+	border: 2px solid red;
+}

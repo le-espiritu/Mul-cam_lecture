@@ -1,0 +1,19 @@
+package multi.erp.emp;
+
+import java.util.ArrayList;
+
+public class EmpDAOImpl implements EmpDAO {
+
+	@Override
+	public int insert(EmpVO user) {
+		System.out.println("member테이블에 insert:"+user);
+		return 0;
+	}
+
+	@Override
+	public ArrayList<EmpVO> getMemberList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

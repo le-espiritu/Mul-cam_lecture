@@ -1,0 +1,20 @@
+@charset "UTF-8";
+body{
+	font-size: 9pt
+}
+h1{
+	color: #2e898e
+}
+#garden{
+	background-image: url("../../images/background.gif");
+	background-repeat: no-repeat;	
+	background-color:#a6cdcd;
+	border: solid white 1px;
+	margin: 20px;
+	padding: 15px;
+	font-style: italic;
+	height: 60px;
+	padding-left: 80px;
+	border-radius: 20px;
+	overflow: auto;
+}

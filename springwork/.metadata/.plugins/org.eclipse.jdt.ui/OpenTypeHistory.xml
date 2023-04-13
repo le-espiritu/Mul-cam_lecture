@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=springdi/src&lt;di.constructor01{MyService.java[MyService" modifiers="513" timestamp="1633312198003"/>
+    <typeInfo handle="=springdi/src&lt;di.constructor01{Logic.java[Logic" modifiers="513" timestamp="1633311929999"/>
+    <typeInfo handle="=frontController/src&lt;controller{Action.java[Action" modifiers="513" timestamp="1633422158052"/>
+    <typeInfo handle="=erp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;multi.erp.emp{EmpService.java[EmpService" modifiers="513" timestamp="1634109916512"/>
+    <typeInfo handle="=erp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;multi.erp.emp{EmpDAO.java[EmpDAO" modifiers="513" timestamp="1634109939816"/>
+    <typeInfo handle="=erp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;multi.erp.board{BoardService.java[BoardService" modifiers="513" timestamp="1633666781125"/>
+    <typeInfo handle="=erp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;multi.erp.board{BoardDAO.java[BoardDAO" modifiers="513" timestamp="1633929475242"/>
+</typeInfoHistroy>

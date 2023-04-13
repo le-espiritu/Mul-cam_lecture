@@ -1,0 +1,84 @@
+DOM(Document Object Model)
+=> 문서를 접근하는 방법을 표준으로 정의해 놓은 것
+   플랫폼이나 언어에 상관없이 컨텐츠(문자열, 이미지, 양식태그 등 웹 문서를 구성하는 구성요소)의 구조를 동적으로 업데이트하고 액세스할 수 있도록
+   W3C에서 표준으로 정의해 놓은 문서 접근방법(html, xml)
+   ---
+    world wide web consortium
+    브라우저 내부에 포함된 html이나 css명세에 따라서 html문서를 해석해서 표시하는데 이것을 w3c에서 정한다.
+    
+1) DOM의 구성요소
+   - document : DOM객체에서 가장 상위의 객체
+   - element(엘리먼트 - node) : html문서를 구성하는 모든 컨텐츠
+   - attribute(속성) : 태그 내부에 정의되어 있는 속성
+   - text(문자열) : 태그와 태그 사이에 입력한 문자열 혹은 공백도 문자열 객체로 인식
+   
+2) DOM에서 사용할 수 있는 속성
+   - nodeValue : 노드의 값
+   - nodeName : 노드의 이름
+   - childNodes : 하나의 노드 밑에 형성된 모든 자식노드를 반환(nodelist - 배열)
+                  HTML문서에 정의된 순서대로 배열에 저장
+   - firstChild : 첫 번째 자식노드
+   - lastChild : 마지막 자식노드
+   
+   
+3) DOM에서 사용할 수 있는 메소드   
+   [노드를 탐색하고 노드의 정보를 파악]
+   - getElementById("id명") : id로 정의된 DOM객체를 반환(node or nodelist)
+   - getElementsByTagName("태그명") : 태그에 해당하는 모든 객체를 노드의 list 형태로 반환 - 배열로 관리
+   - getAttribute("속성명") : 해당 속성에 정의되어 있는 값이 리턴
+   - setAttribute("속성명","값") : 특정객체의 속성의 값을 변경하거나 설정   
+   
+   [노드를 추가하고 변경하고 삭제]
+   - createTextNode("텍스트") : 텍스트노드생성
+   - createElement("태그명") : 태그엘리먼트가 생성(속성도 정의)
+   - appendChild("노드명") : 노드를 추가하기
+         ① 삽입될 노드를 생성 
+           -  createElement : 일반태그
+           -  createTextNode : 문자열
+         ② 삽입될 노드의 위치를 구하기
+         ③ 노드추가
+         
+   - insertBefore(노드,형제노드)
+                 ----- ----------
+                  추가될 노드  삽입될 형제 노드
+                  
+     : 노드를 추가한다.
+       appendChild와 비슷하게 동작
+       appendChild는 맨 마지막에 노드가 추가되지만 insertBefore는 중간에 삽입될 위치를 정할 수 있다.
+   - removeChild(노드명) : 해당노드를 삭제
+      부모노드.removeChild(삭제할노드)
+      
+   
+   
+   
+   
+   
+   
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+   
+   
+   
+   
+   
+   
+   
+   
+    

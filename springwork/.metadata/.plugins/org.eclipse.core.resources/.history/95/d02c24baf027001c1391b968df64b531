@@ -1,0 +1,13 @@
+package multi.erp.emp;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class EmpController {
+	@RequestMapping("/emp/insert.do")
+	public String insert(EmpVO command) {
+		System.out.println("================="+command);
+		return "redirect:/emp/loginPage.do";//회원가입이 완료되면 로그인을 하기 위한 페이지로 redirect하도록 설정
+	}
+}

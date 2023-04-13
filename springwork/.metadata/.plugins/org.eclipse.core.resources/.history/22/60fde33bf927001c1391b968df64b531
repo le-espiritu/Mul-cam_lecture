@@ -1,0 +1,6 @@
+<<MyBatis작업>>
+1. pom.xml에 의존모듈 추가
+   => Mybatis를 쓰기 위해서 필요한 라이브러리를 등록
+   
+   - MyBatis
+   - spring과 MyBatis연동을 위한 라이브러리

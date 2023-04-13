@@ -1,0 +1,18 @@
+package multi.erp.board;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class BoardController {
+	@RequestMapping("/board/insert.do")
+	public String insert(BoardVO board) {
+		return "redirect:/board/list.do";
+	}
+	@RequestMapping("/board/list.do")
+	public ModelAndView boardlist(BoardVO board) {
+		ModelAndView mav = new ModelAndView("board/list");
+		return mav;
+	}	
+}

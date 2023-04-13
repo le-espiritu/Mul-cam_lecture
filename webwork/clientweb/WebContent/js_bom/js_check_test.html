@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		//name속성이 food인 체크박스를 모두 선택/ 해제하는 작업을 실행하는 함수
+		function allcheck() {
+			//food라는 이름으로 정의된 체크박스가 여러 개 - 배열로 관리
+			var mychecklist = document.cbfmt.food;
+			//alert(mychecklist);
+			//alert(mychecklist.length);
+			//allchk라는 이름으로 정의된 체크박스의 값을 가져오기
+			allchkVal = document.cbfmt.allchk.checked;
+			//alert(allchkVal);
+			//allchk값이 true이면 food의 모든 nodelist의 체크값을 true로 변경
+			//allchk값이 false이면 food의 모든 nodelist의 체크값을 false로 변경
+			for (var i = 0; i < mychecklist.length; i++) {
+				mychecklist[i].checked = allchkVal;
+			}
+		}
+		//선택된 체크박스의 value가 div에 출력될 수 있도록 작성
+		//=> 전체 체크박스를 for문으로 제어하면서 check 유무를 확인해서 작업
+		function ckFunc() {
+			//1. 체크박스 목록을 가져오기 - mychklist(배열)
+			var mychklist = document.cbfmt.food;
+			chkVal = ""; //체크된 체크박스의 value를 문자열로 저장할 변수
+		    //2. 배열을 액세스하며 체크박스가 선택됐는지 확인
+		    for (var i = 0; i < mychklist.length; i++) {
+				if(mychklist[i].checked){
+					chkVal = chkVal + mychklist[i].value + " ";
+					//alert(chkVal);
+					console.log(chkVal);//디버깅용도
+				}
+			}
+			
+			//3. innerHTML을 이용해서 div에 출력 - 기존의 컨텐츠를 덮는다.
+			//  => innerHTML속성은 p, div, span태그에서 사용
+			document.getElementById("result").innerHTML = chkVal;
+		}
+	</script>
+
+</head>
+<body>
+	<form name="cbfmt">
+		<label>아이스크림</label> <input type="checkbox" name="food" value="아이스크림" id="ice"> 
+		<label>커피</label> <input type="checkbox"	name="food" value="커피" id="coffee">
+		<label>음료수</label> <input type="checkbox" 	 name="food" value="음료수" id="beverage"> 
+		<label>모두체크/해제</label>
+		<input type="checkbox" name="allchk" id="allchk" onclick="allcheck()"><br>
+
+		<input type="button" value="전송" onclick="ckFunc()">
+	</form>
+	<div id="result"></div>
+</body>
+</html>

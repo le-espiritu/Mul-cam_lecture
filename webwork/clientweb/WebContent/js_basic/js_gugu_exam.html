@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			document.write("<table border='1'>");
+			for(dan = 1;dan<=9;dan++) {
+				document.write("<tr>")
+				for(i = 1;i<=9;i++) {
+					if(dan==i){
+						document.write("<td bgColor='yellow'>"+dan+"*"+i+"="+(dan*i)+"</td>");
+					}else{
+						document.write("<td>"+dan+"*"+i+"="+(dan*i)+"</td>");	
+					}
+					
+				}
+				document.write("</tr>")
+			}
+			document.write("</table>");
+		</script>
+	</body>
+</html>
